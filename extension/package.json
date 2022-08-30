@@ -1,14 +1,14 @@
 {
-  "publisher": "antfu",
-  "name": "file-nesting",
-  "displayName": "File Nesting Updater",
-  "version": "1.0.0",
+  "publisher": "RemiMarche",
+  "name": "cspell-tech",
+  "displayName": "CSpell Tech Updater",
+  "version": "0.0.0",
   "private": true,
-  "description": "Auto updating for Anthony's file nesting config",
+  "description": "Auto updating for Remi's CSpell Tech config",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/antfu/vscode-file-nesting-config",
+    "url": "https://github.com/Marr11317/vscode-cspell-tech-config",
     "directory": "extension"
   },
   "categories": [
@@ -26,36 +26,36 @@
   "contributes": {
     "commands": [
       {
-        "command": "antfu.file-nesting.manualUpdate",
+        "command": "cspell.tech.manualUpdate",
         "title": "Update config now",
-        "category": "File Nesting Updater"
+        "category": "CSpell Tech Updater"
       }
     ],
     "configuration": {
       "type": "object",
-      "title": "File Nesting Updater",
+      "title": "CSpell Tech Updater",
       "properties": {
-        "fileNestingUpdater.autoUpdate": {
+        "cSpellTechUpdater.autoUpdate": {
           "type": "boolean",
           "description": "Fetch and update the latest config automatically",
           "default": true
         },
-        "fileNestingUpdater.promptOnAutoUpdate": {
+        "cSpellTechUpdater.promptOnAutoUpdate": {
           "type": "boolean",
           "description": "Should show up the prompt before doing auto update",
           "default": true
         },
-        "fileNestingUpdater.autoUpdateInterval": {
+        "cSpellTechUpdater.autoUpdateInterval": {
           "type": "number",
           "description": "The minimal interval for auto update, in minutes",
           "default": 720
         },
-        "fileNestingUpdater.upstreamRepo": {
+        "cSpellTechUpdater.upstreamRepo": {
           "type": "string",
           "description": "The upstream repo you want to update from",
-          "default": "antfu/vscode-file-nesting-config"
+          "default": "marr11317/vscode-cspell-tech-config"
         },
-        "fileNestingUpdater.upstreamBranch": {
+        "cSpellTechUpdater.upstreamBranch": {
           "type": "string",
           "description": "The branch name of upstream repo",
           "default": "main"
