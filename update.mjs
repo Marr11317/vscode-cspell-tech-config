@@ -21,7 +21,7 @@ const words = [
   "lcov",
   "lerp",
   "lightgray",
-  "macos",
+  "macOS",
   "PIXI",
   "preprocessor",
   "pyplot",
