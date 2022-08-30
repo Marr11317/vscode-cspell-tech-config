@@ -2,7 +2,7 @@
   "publisher": "RemiMarche",
   "name": "cspell-tech",
   "displayName": "CSpell Tech Updater",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Auto updating for Remi's CSpell Tech config",
   "license": "MIT",
@@ -26,7 +26,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "cspell.tech.manualUpdate",
+        "command": "cSpell.tech.manualUpdate",
         "title": "Update config now",
         "category": "CSpell Tech Updater"
       }
@@ -35,27 +35,27 @@
       "type": "object",
       "title": "CSpell Tech Updater",
       "properties": {
-        "cSpellTechUpdater.autoUpdate": {
+        "cSpell.tech.autoUpdate": {
           "type": "boolean",
           "description": "Fetch and update the latest config automatically",
           "default": true
         },
-        "cSpellTechUpdater.promptOnAutoUpdate": {
+        "cSpell.tech.promptOnAutoUpdate": {
           "type": "boolean",
           "description": "Should show up the prompt before doing auto update",
           "default": true
         },
-        "cSpellTechUpdater.autoUpdateInterval": {
+        "cSpell.tech.autoUpdateInterval": {
           "type": "number",
           "description": "The minimal interval for auto update, in minutes",
           "default": 720
         },
-        "cSpellTechUpdater.upstreamRepo": {
+        "cSpell.tech.upstreamRepo": {
           "type": "string",
           "description": "The upstream repo you want to update from",
           "default": "marr11317/vscode-cspell-tech-config"
         },
-        "cSpellTechUpdater.upstreamBranch": {
+        "cSpell.tech.upstreamBranch": {
           "type": "string",
           "description": "The branch name of upstream repo",
           "default": "main"

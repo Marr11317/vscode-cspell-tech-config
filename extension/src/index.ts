@@ -8,16 +8,16 @@ export async function activate(ctx: ExtensionContext) {
 
   const lastUpdate = ctx.globalState.get("lastUpdate", 0);
   const initialized = ctx.globalState.get("init", false);
-  const autoUpdateInterval = getConfig<number>("cSpellTechUpdater.autoUpdateInterval");
+  const autoUpdateInterval = getConfig<number>("cSpell.tech.autoUpdateInterval");
 
   if (!initialized) {
     ctx.globalState.update("init", true);
     fetchAndUpdate(ctx, false);
   }
 
-  if (getConfig("cSpellTechUpdater.autoUpdate")) {
+  if (getConfig("cSpell.tech.autoUpdate")) {
     if (Date.now() - lastUpdate >= (autoUpdateInterval || 720) * 60_000)
-      fetchAndUpdate(ctx, getConfig("cSpellTechUpdater.promptOnAutoUpdate"));
+      fetchAndUpdate(ctx, getConfig("cSpell.tech.promptOnAutoUpdate"));
   }
 }
 

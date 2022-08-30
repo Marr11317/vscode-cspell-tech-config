@@ -1,9 +1,5 @@
 <br>
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/antfu/vscode-file-nesting-config/main/extension/res/logo.png" style="width:100px;" />
-</p>
-
 <h1 align="center">CSpell Tech Updater</h1>
 
 <p align="center">
@@ -19,7 +15,7 @@ Auto Updater for your CSpell config
 <!-- eslint-skip -->
 
 ```jsonc
-    // updated 2022-08-30 09:15
+    // updated 2022-08-30 09:32
     // https://github.com/marr11317/vscode-cspell-tech-config
     "cSpellTech.enabled": true,
     "cSpellTech.expand": false,
@@ -71,4 +67,4 @@ Auto Updater for your CSpell config
   ],
     ```
 
-It will check for updates every 12 hours by default. You can also do it manually by executing the command `CSpell Tech` Updater: Update config now`.
+It will check for updates every 12 hours by default. You can also do it manually by executing the command `CSpell Tech Updater: Update config now`.

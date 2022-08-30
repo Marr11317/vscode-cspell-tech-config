@@ -5,8 +5,8 @@ import { FILE, MSG_PREFIX, URL_PREFIX } from "./constants";
 import { getConfig } from "./config";
 
 export async function fetchLatest() {
-  const repo = getConfig<string>("cSpellTechUpdater.upstreamRepo");
-  const branch = getConfig<string>("cSpellTechUpdater.upstreamBranch");
+  const repo = getConfig<string>("cSpell.tech.upstreamRepo");
+  const branch = getConfig<string>("cSpell.tech.upstreamBranch");
   const url = `${URL_PREFIX}/${repo}@${branch}/${FILE}`;
   const md = await fetch(url).then(r => r.text());
   const content = (md.match(/```jsonc([\s\S]*?)```/) || [])[1] || "";
@@ -41,10 +41,7 @@ export async function fetchAndUpdate(ctx: ExtensionContext, prompt = true) {
 
   if (shouldUpdate) {
     const config = workspace.getConfiguration();
-    config.update("explorer.cSpellTech.enabled", true, true);
-    if (config.inspect("explorer.cSpellTech.expand")?.globalValue == null)
-      config.update("explorer.cSpellTech.expand", false, true);
-    config.update("explorer.cSpellTech.patterns", {
+    config.update("cSpell.userWords", {
       "//": `Last update at ${new Date().toLocaleString()}`,
       ...patterns,
     }, true);
