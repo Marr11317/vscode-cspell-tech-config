@@ -16,18 +16,59 @@ Auto Updater for your CSpell config
 
 ## Configurations
 
-```json
-{
-  "cSpellTechUpdater.autoUpdate": true,
-  "cSpellTechUpdater.autoUpdateInterval": 720,
-  "cSpellTechUpdater.promptOnAutoUpdate": true,
-  "cSpellTechUpdater.upstreamRepo": "antfu/vscode-file-nesting-config",
-  "cSpellTechUpdater.upstreamBranch": "main"
-}
-```
+<!-- eslint-skip -->
+
+```jsonc
+    // updated 2022-08-30 09:15
+    // https://github.com/marr11317/vscode-cspell-tech-config
+    "cSpellTech.enabled": true,
+    "cSpellTech.expand": false,
+    "cSpell.userWords": [
+    "bbox",
+    "codelyzer",
+    "codepoint",
+    "compodoc",
+    "compodocrc",
+    "devkit",
+    "devtool",
+    "esnext",
+    "flexbox",
+    "fontfaceobserver",
+    "gitbook",
+    "glyphnames",
+    "gpos",
+    "gsub",
+    "Helvetica",
+    "hoverable",
+    "Laravel",
+    "lcov",
+    "lerp",
+    "lightgray",
+    "macos",
+    "PIXI",
+    "preprocessor",
+    "pyplot",
+    "range",
+    "redist",
+    "renderer",
+    "Roboto",
+    "sfdir",
+    "shiki",
+    "sloc",
+    "smufl",
+    "sourcemap",
+    "sveltejs",
+    "tinybench",
+    "tsbuild",
+    "tsbuildinfo",
+    "tslib",
+    "typechecking",
+    "Typedefs",
+    "typedoc",
+    "vite",
+    "vitest",
+    "woff"
+  ],
+    ```
 
 It will check for updates every 12 hours by default. You can also do it manually by executing the command `CSpell Tech` Updater: Update config now`.
-
-## License
-
-MIT

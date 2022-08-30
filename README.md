@@ -16,11 +16,11 @@ Instead, go to `update.mjs`, make changes and then submit a PR. Thanks!
 <!-- eslint-skip -->
 
 ```jsonc
-  // updated 2022-08-30 08:44
-  // https://github.com/marr11317/vscode-cspell-tech-config
-  "cSpellTech.enabled": true,
-  "cSpellTech.expand": false,
-  "cSpell.userWords": [
+    // updated 2022-08-30 09:15
+    // https://github.com/marr11317/vscode-cspell-tech-config
+    "cSpellTech.enabled": true,
+    "cSpellTech.expand": false,
+    "cSpell.userWords": [
     "bbox",
     "codelyzer",
     "codepoint",
@@ -66,4 +66,4 @@ Instead, go to `update.mjs`, make changes and then submit a PR. Thanks!
     "vitest",
     "woff"
   ],
-```
+    ```
