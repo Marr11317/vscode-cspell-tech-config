@@ -4,7 +4,7 @@ import { getConfig } from "./config";
 import { fetchAndUpdate } from "./fetch";
 
 export async function activate(ctx: ExtensionContext) {
-  commands.registerCommand("cspell.tech.manualUpdate", () => fetchAndUpdate(ctx, false));
+  commands.registerCommand("cSpell.tech.manualUpdate", () => fetchAndUpdate(ctx, false));
 
   const lastUpdate = ctx.globalState.get("lastUpdate", 0);
   const initialized = ctx.globalState.get("init", false);
