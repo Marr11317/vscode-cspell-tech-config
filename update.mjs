@@ -53,7 +53,7 @@ function insertData(filename) {
   fs.writeFileSync(filename,
     fs.readFileSync(filename, "utf-8")
       .replace(/```json([\s\S]*?)```/m, () => {
-        const body = JSON.stringify(words, null, 2).split("\n").map(l => `  ${l}`).join("\n");
+        const body = JSON.stringify(words, null, 2).split("\n").map(l => `    ${l}`).join("\n");
         return `
     \`\`\`jsonc
     // updated ${today}
@@ -61,7 +61,7 @@ function insertData(filename) {
     "cSpellTech.enabled": true,
     "cSpellTech.expand": false,
     "cSpell.userWords": ${body.trimStart()},
-    \`\`\``.trim();
+\`\`\``.trim();
       }),
     "utf-8",
   );
