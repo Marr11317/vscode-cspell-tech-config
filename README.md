@@ -67,3 +67,11 @@ Instead, go to `update.mjs`, make changes and then submit a PR. Thanks!
       "woff"
     ],
 ```
+
+## Contributing
+
+Fork and pull request!
+
+Wish to add or correct words? Simply add them in [update.mjs](./update.mjs) and run the `update` script. `pnpm run update`.
+
+Wish to fix the extension? The source code is in [extension/src](./extension/src/).
