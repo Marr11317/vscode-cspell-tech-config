@@ -26,9 +26,13 @@ export async function fetchLatest(): Promise<string[]> {
 
 export async function fetchAndUpdate(ctx: ExtensionContext, prompt = true) {
   const patterns = await fetchLatest();
+  const newVersionAvailable = Date.parse(patterns[0]) > Date.parse(ctx.globalState.get("lastUpdate", "0"));
+  if (!newVersionAvailable)
+    return;
+
   let shouldUpdate = true;
 
-  if (prompt && Date.parse(patterns[0]) > Date.parse(ctx.globalState.get("lastUpdate", "0"))) {
+  if (prompt) {
     const buttonUpdate = "Update";
     const buttonSkip = "Skip this time";
     const result = await window.showInformationMessage(
