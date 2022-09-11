@@ -75,3 +75,7 @@ Fork and pull request!
 Wish to add or correct words? Simply add them in [update.mjs](./update.mjs) and run the `update` script. `pnpm run update`.
 
 Wish to fix the extension? The source code is in [extension/src](./extension/src/).
+
+## Credits
+
+This extension is a fork of [antfu's vscode-file-nesting](https://github.com/antfu/vscode-file-nesting-config) extension.

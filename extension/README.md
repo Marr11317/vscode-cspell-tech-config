@@ -68,3 +68,7 @@ Auto Updater for your CSpell config
 ```
 
 It will check for updates every 12 hours by default. You can also do it manually by executing the command `CSpell Tech Updater: Update config now`.
+
+## Credits
+
+This extension is a fork of [antfu's vscode-file-nesting](https://github.com/antfu/vscode-file-nesting-config) extension.
