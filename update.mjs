@@ -40,7 +40,7 @@ const words = [
   "tsbuildinfo",
   "tslib",
   "typechecking",
-  "Typedefs",
+  "typedefs",
   "typedoc",
   "vite",
   "vitest",

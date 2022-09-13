@@ -15,7 +15,7 @@ Auto Updater for your CSpell config
 <!-- eslint-skip -->
 
 ```jsonc
-    // updated 2022-09-10 20:46
+    // updated 2022-09-13 23:39
     // https://github.com/marr11317/vscode-cspell-tech-config
     "cSpellTech.enabled": true,
     "cSpellTech.expand": false,
@@ -59,7 +59,7 @@ Auto Updater for your CSpell config
       "tsbuildinfo",
       "tslib",
       "typechecking",
-      "Typedefs",
+      "typedefs",
       "typedoc",
       "vite",
       "vitest",
