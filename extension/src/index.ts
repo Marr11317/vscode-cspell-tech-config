@@ -1,10 +1,18 @@
 import type { ExtensionContext } from "vscode";
-import { commands } from "vscode";
+import { commands, window } from "vscode";
 import { getConfig } from "./config";
 import { fetchAndUpdate } from "./fetch";
+import { MSG_PREFIX } from "./constants";
+
+async function manualUpdate(ctx: ExtensionContext) {
+  const updated = await fetchAndUpdate(ctx, false);
+  // A message has already been shown if updated is true
+  if (!updated)
+    window.showInformationMessage(`${MSG_PREFIX} "No new config found"`);
+}
 
 export async function activate(ctx: ExtensionContext) {
-  commands.registerCommand("cSpell.tech.manualUpdate", () => fetchAndUpdate(ctx, false));
+  commands.registerCommand("cSpell.tech.manualUpdate", async () => await manualUpdate(ctx));
 
   const lastUpdate = ctx.globalState.get("lastUpdate", 0);
   const initialized = ctx.globalState.get("init", false);
