@@ -45,6 +45,9 @@ const words = [
   "vite",
   "vitest",
   "woff",
+  "eslint",
+  "eslintignore",
+  "eslintrc",
 ];
 
 const today = new Date().toISOString().slice(0, 16).replace("T", " ");

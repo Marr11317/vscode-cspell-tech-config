@@ -16,7 +16,7 @@ Instead, go to `update.mjs`, make changes and then submit a PR. Thanks!
 <!-- eslint-skip -->
 
 ```jsonc
-    // updated 2022-09-13 23:39
+    // updated 2022-09-25 17:35
     // https://github.com/marr11317/vscode-cspell-tech-config
     "cSpellTech.enabled": true,
     "cSpellTech.expand": false,
@@ -64,7 +64,10 @@ Instead, go to `update.mjs`, make changes and then submit a PR. Thanks!
       "typedoc",
       "vite",
       "vitest",
-      "woff"
+      "woff",
+      "eslint",
+      "eslintignore",
+      "eslintrc"
     ],
 ```
 

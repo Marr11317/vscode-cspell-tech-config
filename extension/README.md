@@ -10,12 +10,18 @@ Auto Updater for your CSpell config
 <a href="https://marketplace.visualstudio.com/items?itemName=RemiMarche.cspell-tech" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/RemiMarche.cspell-tech.svg?color=blue&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
 </p>
 
+## THIS IS BETA SOFTWARE
+
+This extension is in total beta mode. It has few words yet, and things WILL change.
+
+Any contributions are welcome, especially with new words and new spelling corrections.
+
 ## Configurations
 
 <!-- eslint-skip -->
 
 ```jsonc
-    // updated 2022-09-13 23:39
+    // updated 2022-09-25 17:35
     // https://github.com/marr11317/vscode-cspell-tech-config
     "cSpellTech.enabled": true,
     "cSpellTech.expand": false,
@@ -63,7 +69,10 @@ Auto Updater for your CSpell config
       "typedoc",
       "vite",
       "vitest",
-      "woff"
+      "woff",
+      "eslint",
+      "eslintignore",
+      "eslintrc"
     ],
 ```
 
